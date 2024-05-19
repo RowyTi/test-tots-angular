@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <app-header title="Cliente" (handleClick)="onCreate()"/>
+  <div class="container">
+    <tots-table #tableComp
+                (onAction)="onTableAction($event)"
+                [config]="config"
+                [pageIndex]="pagination.current_page"
+                [pageSize]="pagination.per_page"/>
+  </div>
+</div>
